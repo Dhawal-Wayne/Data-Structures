@@ -95,9 +95,6 @@ int main()
     {
         if(i==4)
             {insert_to_tree16(&tree_head,12*10);continue;}
-        if(i==10)
-            {insert_to_tree16(&tree_head,0*10);continue;}
-
         insert_to_tree16(&tree_head,(i+1)*10);
     }
     printf("IN-ORDER\t\t");
