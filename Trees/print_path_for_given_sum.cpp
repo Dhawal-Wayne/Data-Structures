@@ -87,7 +87,7 @@ void print_path_for_given_sum(struct node *root,int sum,int *path,int path_len)
     }
 }
 
-int main()
+int test_main16()
 {
     int n=11;
     struct node *tree_head=NULL;
