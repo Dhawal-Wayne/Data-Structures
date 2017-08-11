@@ -89,7 +89,7 @@ void print_paths(struct node *root,int *paths ,int path_len)
         print_paths(root->right,paths,path_len+1);
     }
 }
-int main()
+int test_main15()
 {
     int n=10;
     struct node *tree_head=NULL;
