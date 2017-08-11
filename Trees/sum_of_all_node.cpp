@@ -88,7 +88,7 @@ int sum_of_all_nodes(struct node *root)
     return result;
 }
 
-int main()
+int test_main14()
 {
     struct node *tree_head=NULL;
     int n=10;

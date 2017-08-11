@@ -131,7 +131,7 @@ int diameter_of_tree(struct node *root)
     return 0;
 }
 
-int main()
+int test_main11()
 {
     int n=10;
     struct node *tree_head=NULL;
