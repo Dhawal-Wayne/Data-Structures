@@ -68,6 +68,8 @@ void inorder15(struct node *root)
 }
 void print_paths(struct node *root,int *paths ,int path_len)
 {
+    //If we print path when the node is null it print the same
+    //Path twice as left and right both null once for left and once for right
     if(!root)
         return;
 
