@@ -87,7 +87,8 @@ void insert_to_tree10(struct node **root,int data)
             else
             {
                 temp->right=create_node10(data);
-                break;            }
+                break;
+            }
         }
     }
     return ;

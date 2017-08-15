@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <bits/stdc++.h>
+#include <queue>
 
 using namespace std;
 
@@ -19,6 +19,7 @@ struct node *create_node15(int data)
     new_node->data=data;
     new_node->left=NULL;
     new_node->right=NULL;
+	return new_node;
 }
 
 void insert_to_tree15(struct node **root,int data)
@@ -89,7 +90,7 @@ void print_paths(struct node *root,int *paths ,int path_len)
         print_paths(root->right,paths,path_len+1);
     }
 }
-int test_main15()
+int main()
 {
     int n=10;
     struct node *tree_head=NULL;
