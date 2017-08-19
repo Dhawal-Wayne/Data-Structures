@@ -91,8 +91,8 @@ int tree_main21()
     int n=10;
     struct node *tree_head=NULL;
     for(int i=0;i<n;i++)
-        insert_to_tree21(&tree_head,(i+1)*10);
 
+        insert_to_tree21(&tree_head,(i+1)*10);
     printf("INORDER\t");
     inorder21(tree_head);
     printf("\n");
