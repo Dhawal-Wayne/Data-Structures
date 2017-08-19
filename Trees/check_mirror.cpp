@@ -70,14 +70,14 @@ void inorder18(struct node *root)
 
 struct node * make_mirror18(struct node *root_1)
 {
+    struct node *new_node=NULL;
     if(root_1)
     {
-        struct node *new_node=NULL;
         new_node=create_node18(root_1->data);
         new_node->left=make_mirror18(root_1->right);
         new_node->right=make_mirror18(root_1->left);
-        return new_node;
     }
+    return new_node;
 }
 
 int is_mirror_image(struct node *root_1,struct node *root_2)

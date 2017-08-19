@@ -102,7 +102,7 @@ void print_zigzag(struct node *root)
     return;
 }
 
-int test_main20()
+int test_main19()
 {
     int n=10;
     struct node *tree_head=NULL;

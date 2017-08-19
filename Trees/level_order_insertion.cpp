@@ -67,7 +67,6 @@ void insert_to_tree2(struct node **root,int data)
     {
         struct queue_node *my_queue=NULL;
         struct node *temp=NULL;
-        struct node **new_node;
         enqueue2(&my_queue,*root);
         while(my_queue)
         {
