@@ -66,13 +66,18 @@ struct node *lca(struct node *root,int child1,int child2)
             return root;
         }
 
-        struct node *child1_present_in_left=lca(root->left,child1,child2);
-        struct node *child2_present_in_right=lca(root->right,child1,child2);
+        //Algo is such that if one is in left sub tree and other in right
+        //both being present either side hence the one we are in must be LCA
+        //if left is not null but right return null it implies that
+        //LCA is in left sub tree vice-versa
 
-        if(child1_present_in_left && child2_present_in_right)
+        struct node *present_in_left=lca(root->left,child1,child2);
+        struct node *present_in_right=lca(root->right,child1,child2);
+
+        if(present_in_left && present_in_right)
             return root;
         else
-            return (child1_present_in_left)?child1_present_in_left:child2_present_in_right;
+            return (present_in_left)?present_in_left:present_in_right;
     }
     else
         return NULL;
