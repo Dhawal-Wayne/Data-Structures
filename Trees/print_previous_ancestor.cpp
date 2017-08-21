@@ -86,7 +86,7 @@ void inorder21(struct node *root)
         inorder21(root->right);
     }
 }
-int tree_main21()
+int test_main21()
 {
     int n=10;
     struct node *tree_head=NULL;
