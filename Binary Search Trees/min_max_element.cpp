@@ -7,7 +7,7 @@ int min_of_tree2(struct node *root)
     if(root)
     {
         if(root->left)
-            return min_of_tree1(root->left);
+            return min_of_tree2(root->left);
 
         return root->data;
     }
@@ -19,7 +19,7 @@ int max_of_tree2(struct node *root)
     if(root)
     {
         if(root->right)
-            return max_of_tree1(root->right);
+            return max_of_tree2(root->right);
 
         return root->data;
     }
