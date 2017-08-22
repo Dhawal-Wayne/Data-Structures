@@ -1,4 +1,7 @@
 #include "bst.hpp"
+#include <stack>
+#include <vector>
+using namespace std;
 
 struct node * create_node(int data)
 {

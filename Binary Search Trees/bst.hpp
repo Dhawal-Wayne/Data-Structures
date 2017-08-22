@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 struct node
 {
@@ -10,6 +13,8 @@ struct node
     struct node *left;
     struct node *right;
 };
+
+//int arr[]={20,10,30,5,11,25,32,66,15,41};
 
 extern struct node * create_node(int data);
 
