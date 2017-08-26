@@ -1,3 +1,4 @@
+
 #include "bst.hpp"
 
 struct node *lca3(struct node *root,int child_1,int child_2)
