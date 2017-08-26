@@ -5,9 +5,11 @@ struct node *lca3(struct node *root,int child_1,int child_2)
 {
     if(root)
     {
-        if((root->data>=child_1 && root->data<=child_2)||(root->data<=child_1 && root->data>=child_2))
-            return root;
-        else if(root->data<child_1 && root->data < child_2)
+        if((root->data < child_1 && root->data > child_2)||
+           (root->data > child_1 && root->data < child_2)||
+           (root->data == child_1 || root->data == child_2))
+           return root;
+        if(root->data < child_1 && root->data < child_2)
             return lca3(root->right,child_1,child_2);
         else
             return lca3(root->left,child_1,child_2);
@@ -32,7 +34,7 @@ int test_main3()
 
     struct node *_lca=lca3(tree_head,child_1,child_2);
     if(_lca)
-    printf("%d is LCA of %d %d\n",_lca->data);
+    printf("%d is LCA of %d %d\n",_lca->data,child_1,child_2);
     else
     printf("NO LCA\n");
     return 0;
