@@ -13,7 +13,7 @@ struct node
 void insert_ll4(int data,struct node **head)
 {
     struct node *temp=*head,*temp2;
-    temp2=(struct node*)calloc(1,sizeof(struct node*));
+    temp2=(struct node*)calloc(1,sizeof(struct node));
     temp2->data=data;
     if(*head)
     {
