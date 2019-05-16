@@ -112,7 +112,7 @@ bool structurally_equal(struct node *root_1,struct node *root_2)
         return 1;
     if(!root_1 || !root_2)
         return 0;
-    return (root_1->data==root_2->data)&&structurally_equal(root_1->left,root_2->left)&&structurally_equal(root_1->right,root_2->left);
+    return structurally_equal(root_1->left,root_2->left)&&structurally_equal(root_1->right,root_2->right);
 }
 
 int test_main9()
