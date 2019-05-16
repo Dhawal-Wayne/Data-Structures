@@ -1,6 +1,6 @@
 
 #include "bst.hpp"
-//Give an complete binary tree we need to print sorted order
+//Given an complete binary tree we need to print sorted order
 //root,2*root+1,2*root+2-->root,left,right
 
 void print_sorted_complete_bin_tree(int arr[],int start,int end)
