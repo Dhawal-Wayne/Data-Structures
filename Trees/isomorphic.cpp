@@ -63,10 +63,8 @@ int is_ismorphic(struct node *root_1,struct node *root_2)
 {
     if(root_1 && root_2)
     {
-        if(is_ismorphic(root_1->left,root_2->left) && is_ismorphic(root_1->right,root_2->right))
-            return 1;
-        else
-            return 0;
+        return ((root_1->data == root_2->data) && ((is_ismorphic(root_1->left,root_2->left) && is_ismorphic(root_1->right,root_2->right)) || 
+                                              (is_ismorphic(root_1->left,root_2->right) && is_ismorphic(root_1->right,root_2->left)) )
     }
     else if(!root_1 && !root_2)
         return 1;
